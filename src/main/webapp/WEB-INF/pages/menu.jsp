@@ -19,7 +19,7 @@
         <a class="nav-link" href="${pageContext.request.contextPath}/Cars">Cars</a>
       </li>
       <li class="nav-item ${pageContext.request.requestURI eq '/parkingLot/about.jsp' ? ' active' : ''}">
-          <a class="nav-link disabled" href="${pageContext.request.contextPath}/about.jsp">About</a>
+          <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
