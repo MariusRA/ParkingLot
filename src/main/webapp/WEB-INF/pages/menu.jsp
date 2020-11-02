@@ -15,11 +15,11 @@
       <li class="nav-item ${pageContext.request.requestURI eq '/ParkingLot/about.jsp' ? ' active' : ''}">
         <a class="nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item ${activePage eq 'Cars' ? ' active' : ''}">
+        <a class="nav-link" href="${pageContext.request.contextPath}/Cars">Cars</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <li class="nav-item ${pageContext.request.requestURI eq '/parkingLot/about.jsp' ? ' active' : ''}">
+          <a class="nav-link disabled" href="${pageContext.request.contextPath}/about.jsp">About</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
