@@ -19,22 +19,29 @@ import javax.persistence.Table;
  * @author mariu
  */
 @Entity
-@Table(name="USERS")
+@Table(name = "USERS")
 
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    
     private Integer id;
     private String username;
     private String email;
     private String password;
     private String position;
-    
-    @OneToMany(mappedBy="user")
-    private Collection <Car> cars;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @OneToMany(mappedBy = "user")
+    private Collection<Car> cars;
 
     public Integer getId() {
         return id;
@@ -100,5 +107,5 @@ public class User implements Serializable {
     public String toString() {
         return "com.park.parkinglot.entity.User[ id=" + id + " ]";
     }
-    
+
 }

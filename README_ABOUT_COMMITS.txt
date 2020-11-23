@@ -1,5 +1,7 @@
 COMMITS CORRESPONDING TO PDFS
 
+authentication and roles --------9b
+
 CRUD for Cars------------8
 
 created a users entry in the menu and successfully displayed
