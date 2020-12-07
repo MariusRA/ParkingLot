@@ -1,5 +1,7 @@
 COMMITS CORRESPONDING TO PDFS
 
+session scoped bean,rest service------11b
+
 add user and refactoring --------10b
 
 authentication and roles --------9b
